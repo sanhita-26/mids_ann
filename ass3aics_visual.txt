@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+
+# Spam vs Ham Distribution
+
+plt.figure(figsize=(6,5))
+
+df['spam'].value_counts().plot(
+    kind='bar',
+    color=['green', 'red']
+)
+
+plt.title(Spam vs Ham Distribution)
+
+plt.xlabel(Class)
+plt.ylabel(Count)
+
+plt.xticks([0,1], ['HAM', 'SPAM'], rotation=0)
+
+plt.grid(axis='y')
+
+plt.show()
